@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnTI"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:onClick="tecnologia"
+        android:text="Tecnologia"
+        app:layout_constraintEnd_toStartOf="@+id/btnGastro"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <Button
+        android:id="@+id/btnGastro"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:onClick="gastronomia"
+        android:text="Gastronomia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnTI"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <Button
+        android:id="@+id/btnDesign"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="design"
+        android:text="Design"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnComu"
+        app:layout_constraintTop_toBottomOf="@+id/btnGastro" />
+
+    <Button
+        android:id="@+id/btnAdm"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="administracao"
+        android:text="Administração"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnModa"
+        app:layout_constraintTop_toBottomOf="@+id/btnDesign" />
+
+    <Button
+        android:id="@+id/btnModa"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="moda"
+        android:text="Moda"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdm"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnComu" />
+
+    <Button
+        android:id="@+id/btnComu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="comunicacao"
+        android:text="Comunicação"
+        app:layout_constraintEnd_toStartOf="@+id/btnDesign"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTI" />
+</android.support.constraint.ConstraintLayout>
